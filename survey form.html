@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>EventFeedback Form</title>
+    </head>
+    <body>
+      <h1 id = "title">SPARK 2024</h1>
+      <p id = "description">"Innovation distinguishes between a leader and a follower."
+</p>
+      <form id = "survey-form">
+        <fieldset>
+          <legend><strong>Personal Inputs</strong></legend>
+        <label id="name-label">Name<input type="text" id = "name" placeholder="Enter your name" required></label>
+         <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" required></label>
+         <label>Roll Number<input type="number"  placeholder = "roll number" id="roll"></label>
+         <label id="number-label">Participated in How many events?<input type="number" min=2 max=5 id="number"placeholder="5"></label>
+     </fieldset>  
+     <fieldset><legend><strong>About the Event </strong></legend>
+              <label>Would you attend this event again in future?</label>
+              <label><input type = "radio" name="choice"  checked  class ="same" value="6"> Yes</label>
+ <label><input type = "radio" name="choice" class = "same" value="7"> May be</label>   
+ <label><input type = "radio" name="choice"class="same" value="8"> Not sure</label>    
+ <label>Which event do you like the most?
+</label>
+ <select id="dropdown">
+           <option value="">Select an option</option>
+           <option value="1">Paper Presentation</option>
+            <option value = "2">Bioscope</option>
+             <option value = "3">Puzzle parade</option>
+              <option value = "4">Colorista</option>
+             
+              </select>
+  <label>How would you rate the event?</label>
+  
+ <label><input type = "checkbox" name="" class ="same" value="11">(1) Poor</label> 
+ <label><input type = "checkbox" name="" class="same" value="12" >(2) Good</label>
+ <label><input type = "checkbox" name="" class="same" value="13">(3) Very Good</label>  
+ <label><input type = "checkbox" name="" class = "same" value="14">(4) Excellent</label> 
+ 
+
+ <label>Any comments or suggestions?</label>
+ <textarea placeholder="Enter your comment here..."></textarea rows = 4 cols=10></fieldset>
+<button type="submit" id = "submit"><a href="#">Submit</a>
+      </button></form></body>
+  </html>
